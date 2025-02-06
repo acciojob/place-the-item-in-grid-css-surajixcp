@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<title>Grid Example</title>
+<style>
+.holder {
+  display: grid;
+  grid-template-rows: repeat(2, 100px); /* Two rows, each 100px tall */
+  grid-template-columns: repeat(2, 100px); /* Two columns, each 100px wide */
+  width: 200px; /* Total width of the grid */
+  height: 200px; /* Total height of the grid */
+}
 
+.item {
+  background-color: lightgray;
+  border: 1px solid gray;
+  text-align: center;
+  line-height: 100px; /* Vertically center the text */
+}
+</style>
+</head>
 <body>
-    <div class="holder">
-    	<div class="item item-1">1</div>
-    	<div class="item item-2">2</div>
-    	<div class="item item-3">3</div>
-    	<div class="item item-4">4</div>
-   </div>
-   <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="holder">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+  <div class="item">Item 4</div>
+</div>
 
 </body>
-
 </html>
